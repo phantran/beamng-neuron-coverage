@@ -1,0 +1,32 @@
+logging:
+  filename:
+  level: DEBUG
+  encoding: utf-8
+  format: '%(asctime)s | %(levelname)s | %(name)s | %(message)s'
+
+data_collecting:
+  mode: "manual"
+  number_of_images: 5
+  image_width: 299
+  image_height: 299
+  scenario_level: "west_coast_usa"
+  scenario_name: "example"
+  vehicle_model: "etk800"
+  pos: "-717,101,118"
+  rot_quat: "0,0,0.3826834,0.9238795"
+  data_path: "/training/data/images/"  # relative to the root of the project
+  csv_path: "/training/data/training_data.csv"
+  model_path: "/training/models/"
+  sleep: 1  #seconds
+
+training:
+  epochs: 30
+
+evaluation:
+  neuron_cover_threshold: 0.2
+  evaluation_data_path: "/evaluation/data/images/"
+
+beamNG:
+  home: "Directory of BeamNG program"
+  host: "localhost"
+  port: 64256

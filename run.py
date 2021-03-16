@@ -12,7 +12,7 @@ def get_console_arguments():
     parser = argparse.ArgumentParser(description='Neuron Coverage Demonstration')
     parser.add_argument('--task', dest='task', choices=['collecting', 'data_cleaning', 'training', 'evaluating'],
                         default="",
-                        required=True, help='Enter one of the following: collecting, training, evaluating')
+                        required=True, help='Enter one of the following: collecting, data_cleaning, training, evaluating')
     parser.add_argument('--q', dest='number_of_images', type=int, default=1000,
                         required=False, help='Number of images data to collect')
     parser.add_argument('--cm', dest='collect_mode', choices=['manual_mode', 'ai_mode'], default="manual_mode",

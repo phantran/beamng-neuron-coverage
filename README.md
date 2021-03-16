@@ -12,4 +12,4 @@ Clone <strong>config.yml.sample</strong> file and rename it to <strong>config.ym
 
 ## Running
 `python run.py --task TASK_TO_PERFORM` <br>
-Replace TASK_TO_PERFORM with one of the following options: <strong>collecting, training, evaluating</strong>
+Replace TASK_TO_PERFORM with one of the following options: <strong>collecting, data_cleaning, training, evaluating</strong>
